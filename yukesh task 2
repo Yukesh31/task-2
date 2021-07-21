@@ -1,0 +1,32 @@
+1)
+    var obj = [
+          { person: "Name 1", age: "2", company: "GUVI" },
+          { person: "Name 2", age: "5", company: "GUVI geek" },
+          { person: "Name 3", age: "8", company: "GUVI geek network" },
+        ]
+    use the above JSON to iterate over all for loops (for, for in, for of, forEach)
+    
+    
+    var obj = [
+  { person: "Name 1", age: "2", company: "GUVI" },
+  { person: "Name 2", age: "5", company: "GUVI geek" },
+  { person: "Name 3", age: "8", company: "GUVI geek network" },
+];
+
+ for(const key of Object.keys(obj))
+ {
+          console.log(key,obj[key]);
+      }
+      
+ for(const key in Object.keys(obj))
+ {
+          console.log(key,obj[key]);
+      }
+      
+ Objects.keys(obj).forEach(function(keys))
+ {
+ console.log(keys,obj[keys]);
+ }
+      
+      
+      
