@@ -1,5 +1,12 @@
  
+1)How to compare two JSON have the same properties without order?
+var obj1 = { name: "Person 1", age:5 };
+var obj2 = { age:5, name: "Person 1" };
 
+
+var obj1 = { name: "Person 1", age:5 };
+var obj2 = { age:5, name: "Person 1" };
+console.log(JSON.stringify(obj1)==JSON.stringify(obj2));
 
 
  2)
@@ -52,8 +59,235 @@ xhr.send();
 
 
 
+4)https://medium.com/@reach2arunprakash/www-guvi-io-zen-d395deec1373
 
 
+Task 1: Simple Programs todo for variables
+1)Declare four variables without assigning values and print them in console
+var a=1;
+var b=2; 
+var c=3;
+var d= 4;
+console.log(a,b,c,d);
+
+2)how to get value of variable my var as output?
+var myvar= 1;
+console.log(myvar);
+
+3)Declare variables to store your first name, last name, marital status, country and age in multiple lines
+
+var fname= "yukesh";
+var lname= "kumaran";
+var marital_status="single";
+var country="India";
+var age=21;
+console.log(fname);
+console.log(lname);
+console.log(marital_status);
+console.log(country);
+console.log(age);
+
+4). Declare variables to store your first name, last name, marital status, country and age in a single line
+
+var fname= "yukesh";
+var lname= "kumaran";
+var marital_status="single";
+var country="India";
+var age=21;
+console.log(fname ,lname, marital_status,country,age);
+
+
+5)Declare variables and assign string, boolean, undefined and null data types
+var a="yukesh"
+var b=true;
+var c;
+var d= null;
+console.log(a,b,c,d);
+
+6)Convert the string to integer
+var a="5"
+console.log( +a);
+console.log(parseInt(a));
+
+7)Write 6 statement which provide truthy & falsey values.
+var a=5;
+var b="5";
+console.log(a==b);
+console.log(a===b);
+console.log(a!=b);
+console.log(a>b);
+console.log(a<b);
+console.log(a=== (+b));
+console.log(a!==b);
+
+
+Task 2: Simple Programs todo for Operators
+1)Square of a number
+var a=5;
+console.log(a*a);
+
+2)Swapping 2 numbers
+var a=5;
+var b=6;
+[a,b]=[b,a]
+console.log(a,b);
+
+3)Addition of 3 numbers
+var a=5;
+var b=6;
+var c=7;
+console.log(a+b+c);
+
+4)Celsius to Fahrenheit conversion
+var celcious=12;
+ var fah= (celcious* 9 / 5 + 32);
+ var fahrenheit=fah.toFixed(2);
+ console.log(fahrenheit);
+ 
+5)Meter to miles
+var m=1;
+var miles= m/ (1609);
+console.log(miles);
+
+6)Pounds to kg
+var m=1;
+var pounds= m/ (2.205);
+console.log(pounds);
+
+7)Calculate Batting Average
+var hits =10;
+var atbat= 30;
+var avg= (hits/atbat);
+console.log(avg);
+
+8)Calculate five test scores and print their average
+var t1=256;
+var t2= 310;
+var t3=210;
+var t4=195;
+var t5= 358;
+var avg=(t1+t2+t3+t4+t5)/5;
+console.log(avg);
+
+9)Power of any number x ^ y.
+var x=5;
+var y=2;
+console.log(Math.pow(x,y));
+
+10)Calculate Simple Interest
+var P= 1000;
+ var T= 2;
+ var R= 5;
+
+ var ans= parseFloat((P*T*R)/100);
+ var SI= ans.toFixed(2);
+ console.log(SI);
+ 
+
+11)Calculate area of an equilateral triangle
+var a=4;
+var area= ((Math.sqrt(3))/4)*(a*a);
+console.log(area);
+
+12)Area Of Isosceles Triangle
+var b=10;
+var h=2;
+var area =(b*h)/2;
+console.log(area);
+
+13)Volume Of Sphere
+var r=2;
+var sum= (Math.PI*(r*r*r))*(4/3);
+console.log(sum);
+
+14)Volume Of Prism
+var b=5;
+var h=5;
+var vol=b*h;
+console.log(vol);
+
+15)Find area of a triangle.
+var b=5;
+var h=2;
+var area=(b*h)/2;
+console.log(area);
+
+16)Give the Actual cost and Sold cost, Calculate Discount Of Product
+var actcost=100;
+var sldcost=75;
+var discount= (actcost-sldcost);
+console.log(discount);
+
+17)Given their radius of a circle and find its diameter, circumference and area.
+var r=2;
+var dia=2*r;
+var area= Math.PI*r*r;
+var circum=2*Math.PI*r;
+console.log(dia,area,circum);
+
+18)Given two numbers and perform all arithmetic operations.
+var a= 5;
+var b= 5;
+var add= a+b;
+var sub= a-b;
+var mult=a*b;
+var div=a/b;
+var mod=a%b;
+var inc= a++;
+var inc1=++a;
+var dec=a--;
+var dec1=--a;
+var exp=a**b;
+console.log(add,sub,mult,div,mod,inc,inc1,dec,dec1,exp);
+
+
+19)Display the asterisk pattern as shown below(No loop needed):
+*****
+*****
+*****
+*****
+*****
+
+var a="*****";
+var b="*****";
+var c="*****";
+var d="*****";
+var e="*****";
+console.log(a);
+console.log(b);
+console.log(c);
+console.log(d);
+console.log(e);
+
+
+
+20)Calculate electricity bill?
+For example, a consumer consumes 100 watts per hour daily for one month. Calculate the total energy bill of that consumer if per unit rate is 10?
+var wh= 100;
+var t=  730;
+var kwh= (100*t)/1000;
+var bill=kwh*10;
+console.log(bill);
+
+
+21)Program To Calculate CGPA
+
+var m1= 90;
+var m2= 90;
+var m3= 80;
+var credit1= 10;
+var credit2= 10;
+var credit3= 10;
+var totalcred=credit1+credit2+credit3;
+
+var total=(m1*credit1)+(m2*credit2)+(m3*credit3);
+var sgpa=total/totalcred;
+var sem=1;
+var cgpa=sgpa/sem;
+console.log(cgpa);
+
+
+ 
 
 
 
