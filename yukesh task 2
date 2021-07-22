@@ -81,16 +81,14 @@ xhr.send();
 
 
  3) use the same restcountries and print all countries name, region, sub region and population.
- var xhr = new XMLHttpRequest();
+var xhr = new XMLHttpRequest();
 xhr.open("GET", "https://restcountries.eu/rest/v2/all");
 xhr.onload = function () {
   var t = JSON.parse(this.response);
 for(i=0;i<t.length;i++)
 {
-  console.log(t[i].name);
-  console.log(t[i].region);
-  console.log(t[i].subregion);
-  console.log(t[i].population);
+  console.log(t[i].name, t[i].region ,t[i].subregion,t[i].population);
+  
   
 }
 };
@@ -98,6 +96,10 @@ xhr.onerror = function () {
   console.log("Error", this.statusText);
 };
 xhr.send();
+
+
+
+
 
 
 
